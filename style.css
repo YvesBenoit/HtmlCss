@@ -1,0 +1,59 @@
+h1 {
+    color: rgb(45, 56, 28);
+    border: 3px solid black;
+    border-radius: 10px;
+    background: burlywood;
+    text-align: center;
+
+}
+
+body {
+    color: rgb(19, 15, 15);
+    background-color: chocolate;
+    background-origin: content-box;
+}
+
+nav{
+    background-color: rgb(163, 219, 31);
+    border: 10px black;
+}
+
+.menuGal {
+    background-color: green;
+    border: 15px purple;
+ }
+
+form{
+    border : solid blue 20px;
+    background-color: blueviolet;
+    align-items: flex-end;
+}
+
+
+li.menuGal {
+    display: inline;
+    padding: 0 23px;
+    border: solid red;
+}
+
+label{
+ width : 100px ;
+ float: left;
+	width: 15%;
+	margin: 2px;
+}
+
+.formfield{
+    display : block;
+    border : 3px solid rgba(66, 62, 62, 0.055);
+    background-color: yellow;
+}
+
+div>button{
+    float : right;
+    width : 30%;
+}
+
+image{
+    size : 50%;
+}
