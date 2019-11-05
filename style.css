@@ -7,13 +7,36 @@ h1 {
 
 }
 
+header {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    border-radius: 5px;
+    background-color: #ce0033;
+    margin: 15px 0;
+}
+
+header h1 {
+    color: #eff0f2;
+}
+
+h1,
+h2,
+h3 {
+    color: #ce0033;
+    font-family: 'Big Shoulders Text', cursive;
+}
+
+
 body {
     color: rgb(19, 15, 15);
     background-color: chocolate;
     background-origin: content-box;
 }
 
-nav{
+nav {
     background-color: rgb(163, 219, 31);
     border: 10px black;
 }
@@ -21,39 +44,113 @@ nav{
 .menuGal {
     background-color: green;
     border: 15px purple;
- }
+}
 
-form{
-    border : solid blue 20px;
+main {
+    width: 80%;
+    margin: auto;
+}
+
+form {
+    border: solid white 2px;
     background-color: blueviolet;
-    align-items: flex-end;
+    /*align-items: flex-end;*/
 }
 
 
 li.menuGal {
-    display: inline;
-    padding: 0 23px;
+    display: inline-flex;
+    padding: 0 3px;
     border: solid red;
 }
 
-label{
- width : 100px ;
- float: left;
-	width: 15%;
-	margin: 2px;
+label {
+    width: 100px;
+    float: left;
+    /*  width: 15%;*/
+    margin: 2px;
+    min-width: 150px;
 }
 
-.formfield{
-    display : block;
-    border : 3px solid rgba(66, 62, 62, 0.055);
+.form-field {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 45%;
+    padding: 5px 5px;
+}
+
+.formfield {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+    padding: 5px 5px;
+    /*    display : block;  */
+    border: 1px solid rgba(196, 8, 8, 0.055);
     background-color: yellow;
 }
 
-div>button{
-    float : right;
-    width : 30%;
+div>button {
+    float: right;
+    width: 50%;
 }
 
-image{
-    size : 50%;
+image {
+    size: 50%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+input {
+    min-width: 300px;
+    display: flex;
+    /* flex-wrap: wrap;*/
+}
+
+label {
+    min-width: 100px;
+}
+
+@media print {
+    /* Ici mes rules specifiques pour impression. */
+}
+
+@media screen {
+    /* // Ici mes rules specifiques pour affichage sur ecran */
+}
+
+
+@media screen and (max-width: 500px) {
+    /* // Ici mes rules specifiques pour affichage sur ecran
+    // dont la taille est inferieure a 1024px. */
+
+    header {
+
+        border-radius: 20px;
+        background-color: #1730bd;
+        margin: 0px 0;
+    }
+
+    header h1 {
+        color: #4edb0d;
+    }
+
+    .formfield {
+        width: 100%;
+        padding: 1px 1px;
+        /*    display : block;  */
+        border: 0px;
+        background-color: rgb(216, 216, 195);
+    }
+
+    main {
+        width: 100%;
+    }
 }

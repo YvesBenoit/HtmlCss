@@ -10,7 +10,9 @@
 </head>
 
 <body>
-    <h1> Mini Projet Fitness Coach</h1>
+    <header>
+        <h1> Mini Projet Fitness Coach</h1>
+    </header>
     <nav>
         <ul>
             <li class=menuGal><a href="./Accueil.html"> Accueil </a></li>
@@ -20,37 +22,40 @@
 
         </ul>
     </nav>
+    <main>
 
-    <form action="/traitement" method="post">
+        <form action="/traitement" method="post">
 
-        <div class=formfield>
-            <label for="last_name">Last Name : </label>
-            <input placeholder="votre nom" id="last_name" type="text" name="last_name">
-        </div>
+            <div class=formfield>
+                <label for="last_name">Last Name : </label>
+                <input placeholder="votre nom" id="last_name" type="text" name="last_name">
+            </div>
 
-        <div class=formfield>
-            <label for="first_name">First Name  : </label>
-            <input placeholder="votre prénom" id="first_name" type="text" name="first_name">
-        </div>
+            <div class=formfield>
+                <label for="first_name">First Name : </label>
+                <input placeholder="votre prénom" id="first_name" type="text" name="first_name">
+            </div>
 
-        <div class=formfield>
-            <label for="telehone">Telephone : </label>
-            <input placeholder="votre telephone " id="telephone" type="text" name="telephone">
-        </div>
+            <div class=formfield>
+                <label for="telehone">Telephone : </label>
+                <input placeholder="votre telephone " id="telephone" type="text" name="telephone">
+            </div>
 
-        <div class=formfield>
-            <label for="email">e-mail    : </label>
-            <input placeholder="votre email" id="email" type="text" name="email">
-        </div>
+            <div class=formfield>
+                <label for="email">e-mail : </label>
+                <input placeholder="votre email" id="email" type="text" name="email">
+            </div>
 
-        <div class=formfield>
-            <label for="texte">texte : </label>
-            <input placeholder="votre texte" id="texte" type="text" name="texte">
-        </div>
+            <div class=formfield>
+                <label for="texte">texte : </label>
+                <textarea name="texte" id="texte" cols="40" rows="10"placeholder="votre texte"></textarea>
+            
+            </div>
 
-        <div class=formfield>
-            <!-- Submit button -->
-            <button type="submit">Submit</button>
-        </div>
-    </form>
+            <div class=formfield>
+                <!-- Submit button -->
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </main>
 </body>
